@@ -1,0 +1,12 @@
+- name: condition demo
+  hosts: localhost
+  tasks:
+       -name: veggies
+       ansible.builtin.debug:
+        msg: veggies
+        when : type == "veggies"
+
+       -name: fruits
+       ansible.builtin.debug:
+        msg: fruits
+        when : type == "fruits"
