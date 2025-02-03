@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example"{
-    bucket = "my-tf-test"
+    bucket = "my-tf-test-15952521"
     tags = {
         Name = "my bucket"
         Environment = "test" 
