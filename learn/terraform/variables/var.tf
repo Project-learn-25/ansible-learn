@@ -29,5 +29,5 @@ output "z_t" {
 
 variable "env" {}
     output "env_name" {
-        value = "Environment name - $(var.env)"
+        value = "Environment name - ${var.env}"
     }
