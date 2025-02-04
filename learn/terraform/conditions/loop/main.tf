@@ -6,7 +6,7 @@ resource "null_resource" "test"{
 }
 
 resource "null_resource" "test1"{
-    for_each = "var.color-code"
+    for_each = var.color-code
 }
 
 variable "color-code" {
