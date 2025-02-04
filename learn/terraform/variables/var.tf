@@ -34,5 +34,5 @@ variable "tag"{}
         value = "Environment name - ${var.env}"
     }
 output "tag"{
-    value = "var.tag"
+    value = var.tag
 }
