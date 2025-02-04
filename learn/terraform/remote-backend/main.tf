@@ -7,7 +7,7 @@ aws = {
 }
 
 
-backend "aws_s3_bucket" "example"{
+backend "s3" {
     bucket = "my-tf-test-15952521"
     key = "sm/myfile/terraform.tfstate"
     region = "us-east-1"
