@@ -29,7 +29,7 @@ output "z_t" {
 
 variable "env" {}
 
-variable "tag"{}
+variable "tag" {}
     output "env_name" {
         value = "Environment name - ${var.env}"
     }
