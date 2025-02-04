@@ -1,12 +1,12 @@
 #count =   for simple looping
-#foreach - for complex looping
+#for_each - for complex looping
 
 resource "null_resource" "test"{
     count = 10
 }
 
 resource "null_resource" "test1"{
-    foreach = "var.color-code"
+    for_each = "var.color-code"
 }
 
 variable "color-code" {
