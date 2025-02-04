@@ -5,4 +5,4 @@ resource "aws_instance" "test" {
     instance_type = "var.instance_type" == "t2*" ? "t3.micro" : var.instance_type
 }
 
-variab "instance_type" {}
+variable "instance_type" {}
