@@ -27,8 +27,7 @@ output "z_t" {
     value = var.c_map["t"]
 }
 
-variable "env" {
+variable "env" {}
     output "env_name" {
         value = "Environment name - $(var.env)"
     }
-}
