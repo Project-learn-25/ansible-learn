@@ -1,5 +1,5 @@
 variable "a" {
-    default = "200"
+    default = "100"
 }
 
 variable "b_list" {
@@ -18,11 +18,11 @@ output "x" {
 }
 
 
-output "y_1" {
-    value = var.b_list[1]
+output "y_0" {
+    value = var.b_list[0]
 }
 
 
-output "z_s" {
-    value = var.c_map["s"]
+output "z_t" {
+    value = var.c_map["t"]
 }
