@@ -27,7 +27,7 @@ output "z_t" {
     value = var.c_map["t"]
 }
 
-variable "env" {"dev.tfvars"}
+variable "env" {"dev"}
     output "env_name" {
         value = "Environment name - ${var.env}"
     }
