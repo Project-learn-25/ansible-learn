@@ -6,3 +6,4 @@ resource "aws_instance" "test" {
 }
 
 variable "instance_type" {}
+#variable "create_instance"{} -try with boolean
