@@ -9,6 +9,6 @@ terraform {
 }
 
 #provier block
-provide "aws" {
+provider "aws" {
     region = var.aws_region
 }
