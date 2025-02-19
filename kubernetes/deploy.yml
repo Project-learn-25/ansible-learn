@@ -33,9 +33,10 @@ metadata:
 spec:
   ports:
     - name: http
+    nodePort:  30007
       port: 80
       protocol: TCP
       targetPort: 80
   selector:
     app: nginx
-  type: LoadBalancer  
+  type: NodePort  
