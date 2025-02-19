@@ -1,0 +1,38 @@
+#enforce MFA for IAM users in a JSON policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Action": "*",
+            "Resource": "*",
+            "Condition":
+            {
+                "BoolIfExists":{
+                    "aws:MultiFactorAuthPresent": "False"
+                }
+            }
+
+        }
+    ]
+}
+
+
+#enforce role assumption only from an EC2 instance
+{
+    "Version": 2012-10-17,
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws:iam::123456789012:role/MyEC2Role",
+            "Condition":{
+                "StringEquals":{
+                    "aws:SourceInstanceArn": "ARN Details/instanceid"
+                }
+            }
+        }
+    ]
+}
+
+

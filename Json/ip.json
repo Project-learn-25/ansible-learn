@@ -1,0 +1,19 @@
+#restrict IAM access based on Ip address
+
+{
+    "version": "2012-10-17" ,
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Action": "*",
+            "Resource": "*",
+            "Condition":{
+                "NotIpAddress":{
+                    "aws:SourceIp": "201.10.10.0/24"
+                }
+            }
+        }
+
+    ]
+}
+
