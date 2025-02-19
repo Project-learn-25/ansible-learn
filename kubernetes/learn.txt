@@ -15,3 +15,5 @@ spec:
    env:
     - name: COLOR
       value: green
+
+      #aws eks update-kubeconfig --name Demo-EKS-Cluster --region us-east-1
