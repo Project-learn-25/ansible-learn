@@ -10,7 +10,7 @@ spec:
   csi:
     driver: ebs.csi.aws.com
     fsType: ext4
-    volumeHandle: vol-0d8ccf46e0eb4d3d1
+    volumeHandle: vol-0d016f5f1900a6766
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -18,4 +18,4 @@ spec:
             - key: topology.kubernetes.io/zone
               operator: In
               values:
-                - us-east-1b
+                - us-east-1a
